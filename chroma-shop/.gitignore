@@ -1,0 +1,47 @@
+
+# Dependencias
+node_modules/
+
+# Compilaciones
+dist/
+build/
+www/
+coverage/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Configuraciones locales
+.vscode/
+.vs/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.tmp
+*.bak
+
+# Android: archivos generados localmente
+android/.gradle/
+android/local.properties
+android/**/build/
+android/.idea/
+*.apk
+*.aab
+
+# iOS: archivos generados
+ios/Pods/
+ios/build/
+ios/DerivedData/
+
+# Archivos de pruebas generados
+playwright-report/
+test-results/
+
+# Python, si hubiera archivos temporales
+__pycache__/
+.venv/
