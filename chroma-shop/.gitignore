@@ -45,3 +45,32 @@ test-results/
 # Python, si hubiera archivos temporales
 __pycache__/
 .venv/
+
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Android
+android/.gradle/
+android/.idea/
+android/local.properties
+android/build/
+android/app/build/
+android/captures/
+android/.cxx/
+
+# Signing credentials
+*.jks
+*.keystore
+
+# Firebase private credentials
+*firebase-adminsdk*.json
+service-account*.json
