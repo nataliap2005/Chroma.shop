@@ -65,28 +65,49 @@ def unregister(body: Device, authorization: str = Header(default='')):
 @router.post('/advance')
 def advance(body: Transition, authorization: str = Header(default='')):
     jwt, _ = identity(authorization)
-    # The existing SQL RPC checks administrator privileges and valid transitions.
-    response = request('POST', '/rest/v1/rpc/advance_order', jwt,
-                       json={'oid': str(body.order_id), 'new_status': body.status})
+    response = request(
+        'POST', '/rest/v1/rpc/change_order_status', jwt,
+        json={'oid': str(body.order_id), 'new_status': body.status,
+              'expected_status': body.previous_status}
+    )
     if not response.is_success:
-        raise HTTPException(403, 'Cambio de estado no autorizado o inválido')
+        raise HTTPException(403, 'Cambio no autorizado o estado desactualizado. Recarga el pedido.')
+    order = response.json()
+    stages = ['Confirmado', 'En preparación', 'Enviado', 'Entregado']
+    backwards = stages.index(body.status) < stages.index(order['previous_status'])
+    titles = {
+        'Confirmado': 'Tu pedido está confirmado',
+        'En preparación': 'Estamos preparando tu pedido',
+        'Enviado': 'Tu pedido ha sido enviado',
+        'Entregado': 'Tu pedido ha sido entregado'
+    }
+    title = 'Corrección del estado de tu pedido' if backwards else titles[body.status]
+    message = f'Pedido #{str(body.order_id)[:8]}: {body.status}. Consulta el seguimiento en Chroma Shop.'
     sent = 0
     try:
-        order = request('GET', '/rest/v1/orders', params={'id': 'eq.' + str(body.order_id), 'select': 'user_id'}).json()[0]
-        devices = request('GET', '/rest/v1/device_tokens', params={'user_id': 'eq.' + order['user_id'], 'select': 'token'}).json()
+        devices_response = request(
+            'GET', '/rest/v1/device_tokens',
+            params={'user_id': 'eq.' + order['user_id'], 'select': 'token'}
+        )
+        devices_response.raise_for_status()
+        devices = devices_response.json()
         try:
             firebase_admin.get_app()
         except ValueError:
             firebase_admin.initialize_app(credentials.Certificate(json.loads(os.environ['FIREBASE_CREDENTIALS'])))
-        titles = {'En preparación': 'Estamos preparando tu pedido', 'Enviado': 'Tu pedido ha sido enviado', 'Entregado': 'Tu pedido ha sido entregado'}
         for device in devices:
             try:
-                messaging.send(messaging.Message(token=device['token'], notification=messaging.Notification(title=titles[body.status], body='Consulta el seguimiento en Chroma Shop.')))
+                messaging.send(messaging.Message(
+                    token=device['token'],
+                    notification=messaging.Notification(title=title, body=message)
+                ))
                 sent += 1
             except messaging.UnregisteredError:
-                request('DELETE', '/rest/v1/device_tokens', params={'token': 'eq.' + device['token'], 'user_id': 'eq.' + order['user_id']})
-            except Exception:
-                log.warning('No se pudo enviar una notificación')
-    except Exception:
-        log.warning('Pedido actualizado; envío push no disponible')
+                request('DELETE', '/rest/v1/device_tokens', params={
+                    'token': 'eq.' + device['token'], 'user_id': 'eq.' + order['user_id']
+                })
+            except Exception as exc:
+                log.warning('No se pudo enviar una notificación: %s', type(exc).__name__)
+    except Exception as exc:
+        log.warning('Pedido actualizado; envío push no disponible: %s', type(exc).__name__)
     return {'ok': True, 'sent': sent}
