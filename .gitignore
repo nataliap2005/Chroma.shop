@@ -1,0 +1,29 @@
+# Frontend
+node_modules/
+dist/
+
+# Backend
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Android
+.gradle/
+local.properties
+**/build/
+*.jks
+*.keystore
+
+# Archivos comprimidos
+*.zip
+
+# Sistema
+.DS_Store
+Thumbs.db
