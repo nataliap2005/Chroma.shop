@@ -1,0 +1,534 @@
+{
+  "evidence": {
+    "undertone_self": {
+      "frio": [
+        "temp",
+        -1,
+        1.1
+      ],
+      "calido": [
+        "temp",
+        1,
+        1.1
+      ],
+      "neutro": [
+        "temp",
+        0,
+        0.5
+      ],
+      "oliva": [
+        "temp",
+        0,
+        0.4
+      ]
+    },
+    "veins": {
+      "azules": [
+        "temp",
+        -1,
+        0.2
+      ],
+      "verdes": [
+        "temp",
+        1,
+        0.2
+      ]
+    },
+    "metal": {
+      "plata": [
+        "temp",
+        -1,
+        1.3
+      ],
+      "oro": [
+        "temp",
+        1,
+        1.3
+      ]
+    },
+    "white": {
+      "puro": [
+        "temp",
+        -1,
+        1.1
+      ],
+      "marfil": [
+        "temp",
+        1,
+        1.1
+      ]
+    },
+    "clothes": {
+      "frios": [
+        "temp",
+        -1,
+        1.7
+      ],
+      "calidos": [
+        "temp",
+        1,
+        1.7
+      ]
+    },
+    "lip_temp": {
+      "berry": [
+        "temp",
+        -1,
+        1.5
+      ],
+      "coral": [
+        "temp",
+        1,
+        1.5
+      ]
+    },
+    "blush_temp": {
+      "rosa": [
+        "temp",
+        -1,
+        1.0
+      ],
+      "durazno": [
+        "temp",
+        1,
+        1.0
+      ]
+    },
+    "foundation_temp": {
+      "rosado": [
+        "temp",
+        -1,
+        1.4
+      ],
+      "dorado": [
+        "temp",
+        1,
+        1.4
+      ],
+      "neutro": [
+        "temp",
+        0,
+        0.6
+      ],
+      "oliva": [
+        "temp",
+        0,
+        0.4
+      ]
+    },
+    "hair_depth": {
+      "muy_claro": [
+        "depth",
+        -1,
+        0.9
+      ],
+      "claro": [
+        "depth",
+        -0.55,
+        0.9
+      ],
+      "medio": [
+        "depth",
+        0.3,
+        0.9
+      ],
+      "oscuro": [
+        "depth",
+        1,
+        0.9
+      ]
+    },
+    "eye_depth": {
+      "claro": [
+        "depth",
+        -0.8,
+        0.65
+      ],
+      "medio": [
+        "depth",
+        0.15,
+        0.65
+      ],
+      "oscuro": [
+        "depth",
+        0.8,
+        0.65
+      ]
+    },
+    "depth_best": {
+      "profundos": [
+        "depth",
+        1,
+        2.2
+      ],
+      "claros": [
+        "depth",
+        -1,
+        2.2
+      ],
+      "intermedios": [
+        "depth",
+        0,
+        1
+      ]
+    },
+    "lip_depth": {
+      "profundo": [
+        "depth",
+        1,
+        1.1
+      ],
+      "claro": [
+        "depth",
+        -1,
+        1.1
+      ],
+      "medio": [
+        "depth",
+        0,
+        0.5
+      ]
+    },
+    "contrast": {
+      "bajo": [
+        "contrast",
+        -1,
+        2.0
+      ],
+      "medio": [
+        "contrast",
+        0,
+        1.2
+      ],
+      "alto": [
+        "contrast",
+        1,
+        2.0
+      ]
+    },
+    "brow_contrast": {
+      "suaves": [
+        "contrast",
+        -1,
+        1.0
+      ],
+      "medias": [
+        "contrast",
+        0,
+        0.65
+      ],
+      "marcadas": [
+        "contrast",
+        1,
+        1.0
+      ]
+    },
+    "chromatic_best": {
+      "favorecen": [
+        "chroma",
+        1,
+        1.8
+      ],
+      "dominan": [
+        "chroma",
+        -1,
+        1.8
+      ],
+      "intermedio": [
+        "chroma",
+        0,
+        0.7
+      ]
+    },
+    "muted_effect": {
+      "favorecen": [
+        "chroma",
+        -1,
+        1.6
+      ],
+      "apagan": [
+        "chroma",
+        1,
+        1.6
+      ],
+      "intermedio": [
+        "chroma",
+        0,
+        0.6
+      ]
+    },
+    "vivid_effect": {
+      "fuerte": [
+        "chroma",
+        1,
+        1.5
+      ],
+      "polvoso": [
+        "chroma",
+        -1,
+        1.5
+      ],
+      "intermedio": [
+        "chroma",
+        0,
+        0.7
+      ]
+    },
+    "makeup_intensity": {
+      "definido": [
+        "chroma",
+        1,
+        1.1
+      ],
+      "difuminado": [
+        "chroma",
+        -1,
+        1.1
+      ],
+      "equilibrado": [
+        "chroma",
+        0,
+        0.6
+      ]
+    },
+    "clear_vs_dusty": {
+      "electrico": [
+        "chroma",
+        1,
+        1.1
+      ],
+      "grisaceo": [
+        "chroma",
+        -1,
+        1.1
+      ],
+      "medio": [
+        "chroma",
+        0,
+        0.6
+      ]
+    }
+  },
+  "signatures": {
+    "Invierno profundo": {
+      "temp": -0.9,
+      "depth": 1.0,
+      "chroma": 0.5,
+      "contrast": 0.9
+    },
+    "Invierno frío": {
+      "temp": -1.0,
+      "depth": 0.28,
+      "chroma": 0.42,
+      "contrast": 0.65
+    },
+    "Invierno brillante": {
+      "temp": -0.8,
+      "depth": 0.12,
+      "chroma": 1.0,
+      "contrast": 0.85
+    },
+    "Verano claro": {
+      "temp": -0.7,
+      "depth": -1.0,
+      "chroma": -0.45,
+      "contrast": -0.45
+    },
+    "Verano frío": {
+      "temp": -1.0,
+      "depth": -0.16,
+      "chroma": -0.4,
+      "contrast": -0.15
+    },
+    "Verano suave": {
+      "temp": -0.6,
+      "depth": -0.14,
+      "chroma": -1.0,
+      "contrast": -0.65
+    },
+    "Otoño profundo": {
+      "temp": 0.9,
+      "depth": 1.0,
+      "chroma": -0.33,
+      "contrast": 0.65
+    },
+    "Otoño cálido": {
+      "temp": 1.0,
+      "depth": 0.22,
+      "chroma": -0.34,
+      "contrast": 0.1
+    },
+    "Otoño suave": {
+      "temp": 0.65,
+      "depth": -0.18,
+      "chroma": -1.0,
+      "contrast": -0.45
+    },
+    "Primavera clara": {
+      "temp": 0.7,
+      "depth": -1.0,
+      "chroma": 0.4,
+      "contrast": -0.2
+    },
+    "Primavera cálida": {
+      "temp": 1.0,
+      "depth": -0.2,
+      "chroma": 0.55,
+      "contrast": 0.25
+    },
+    "Primavera brillante": {
+      "temp": 0.7,
+      "depth": 0.05,
+      "chroma": 1.0,
+      "contrast": 0.8
+    }
+  },
+  "weights": {
+    "temp": 2.7,
+    "depth": 1.6,
+    "chroma": 1.75,
+    "contrast": 1.1
+  },
+  "palettes": {
+    "Invierno profundo": [
+      "#171E32",
+      "#74223E",
+      "#24435F",
+      "#0D564B",
+      "#ECECEC",
+      "#52216F"
+    ],
+    "Invierno frío": [
+      "#14365E",
+      "#BE1E4C",
+      "#FCFAF9",
+      "#34255B",
+      "#20848C",
+      "#1B1B27"
+    ],
+    "Invierno brillante": [
+      "#E60050",
+      "#1469D2",
+      "#6C0FD0",
+      "#00A88A",
+      "#FFF9FF",
+      "#11151F"
+    ],
+    "Verano claro": [
+      "#9CBBDD",
+      "#E5B9CB",
+      "#B2A8CF",
+      "#A8C8C4",
+      "#D8DCE5",
+      "#8A9FCA"
+    ],
+    "Verano frío": [
+      "#7894C2",
+      "#BF8EAF",
+      "#6F719D",
+      "#B1BBCD",
+      "#DCC2D1",
+      "#648C91"
+    ],
+    "Verano suave": [
+      "#918FA6",
+      "#AB91A0",
+      "#7D8F87",
+      "#C5B6C0",
+      "#8F9FA9",
+      "#A1A79D"
+    ],
+    "Otoño profundo": [
+      "#793D2E",
+      "#55633A",
+      "#B87A36",
+      "#53382D",
+      "#9F4A30",
+      "#3B4940"
+    ],
+    "Otoño cálido": [
+      "#D16A33",
+      "#8C6B2D",
+      "#BD812B",
+      "#946337",
+      "#A25528",
+      "#6D7132"
+    ],
+    "Otoño suave": [
+      "#A17E69",
+      "#8D8B62",
+      "#C3A18A",
+      "#7E6B5E",
+      "#AB916C",
+      "#A66F65"
+    ],
+    "Primavera clara": [
+      "#F3BFA6",
+      "#FFD88B",
+      "#A7CB9E",
+      "#7DC8C5",
+      "#F2A8C1",
+      "#D5CDA4"
+    ],
+    "Primavera cálida": [
+      "#F28936",
+      "#F7C34D",
+      "#80AE58",
+      "#D36B54",
+      "#63B7AE",
+      "#D8A63F"
+    ],
+    "Primavera brillante": [
+      "#F14D70",
+      "#ED9A18",
+      "#21AD8F",
+      "#4378D6",
+      "#FAE849",
+      "#E74C4D"
+    ]
+  },
+  "occasions": {
+    "universidad": {
+      "name": "Universidad o trabajo",
+      "description": "Look natural y práctico para el día a día.",
+      "categories": [
+        "Base",
+        "Corrector",
+        "Rubor",
+        "Labial"
+      ]
+    },
+    "noche": {
+      "name": "Evento de noche",
+      "description": "Look más definido para una ocasión formal.",
+      "categories": [
+        "Base",
+        "Corrector",
+        "Rubor",
+        "Iluminador",
+        "Sombras",
+        "Labial"
+      ]
+    },
+    "cita": {
+      "name": "Cita o salida",
+      "description": "Un look equilibrado y versátil.",
+      "categories": [
+        "Base",
+        "Rubor",
+        "Labial",
+        "Sombras"
+      ]
+    },
+    "aire_libre": {
+      "name": "Plan al aire libre",
+      "description": "Look ligero para una ocasión informal.",
+      "categories": [
+        "Base",
+        "Bronzer",
+        "Rubor",
+        "Labial"
+      ]
+    }
+  }
+}
