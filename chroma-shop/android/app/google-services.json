@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "312252715594",
+    "project_id": "chroma-shop",
+    "storage_bucket": "chroma-shop.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312252715594:android:55415364d8395ed6a44cb3",
+        "android_client_info": {
+          "package_name": "com.chroma.shop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5lta8_yIupbgbmxZ5PAwVltHPW6Nn1Oo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
