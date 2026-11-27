@@ -1,0 +1,1063 @@
+[
+  {
+    "key": "skin_tone",
+    "section": "Tu piel",
+    "heading": "¿Qué tan clara u oscura es tu piel?",
+    "hint": "Mírate sin maquillaje y con luz natural, por ejemplo cerca de una ventana. Esto ayuda a elegir el tono de base y corrector.",
+    "options": [
+      {
+        "value": "claro",
+        "label": "Clara (porcelana o marfil)",
+        "colors": [
+          "#F3D9C8"
+        ]
+      },
+      {
+        "value": "medio",
+        "label": "Media (beige o trigueña)",
+        "colors": [
+          "#D9AE8C"
+        ]
+      },
+      {
+        "value": "oscuro",
+        "label": "Oscura (morena o canela)",
+        "colors": [
+          "#A8714D"
+        ]
+      },
+      {
+        "value": "profundo",
+        "label": "Muy oscura (ébano o chocolate)",
+        "colors": [
+          "#5E3A28"
+        ]
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "undertone_self",
+    "section": "Tu piel",
+    "heading": "¿Qué color se nota por debajo de tu piel?",
+    "hint": "Es tu subtono: el matiz de fondo de la piel, que no cambia aunque te broncees. Si no lo sabes, no pasa nada: las demás preguntas ayudan a calcularlo.",
+    "options": [
+      {
+        "value": "frio",
+        "label": "Rosado o rojizo (subtono frío)",
+        "colors": [
+          "#EBC1BC",
+          "#F2B8B8"
+        ]
+      },
+      {
+        "value": "calido",
+        "label": "Dorado, amarillo o durazno (subtono cálido)",
+        "colors": [
+          "#E9C48E",
+          "#EFC889"
+        ]
+      },
+      {
+        "value": "neutro",
+        "label": "Una mezcla de los dos (subtono neutro)",
+        "colors": [
+          "#E7C9AE",
+          "#E3C2A6"
+        ]
+      },
+      {
+        "value": "oliva",
+        "label": "Verdoso o grisáceo (subtono oliva)",
+        "colors": [
+          "#CDBB8E",
+          "#BFAF85"
+        ]
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "veins",
+    "section": "Tu piel",
+    "heading": "Con luz natural, ¿de qué color ves las venas de tu muñeca?",
+    "hint": "Mira la parte de adentro de la muñeca. Es solo una pista pequeña: no decide tu resultado.",
+    "options": [
+      {
+        "value": "azules",
+        "label": "Azules o moradas",
+        "colors": [
+          "#5F6FA8",
+          "#7A68A6"
+        ],
+        "image": "/static/img/test/venas-azules.jpg"
+      },
+      {
+        "value": "verdes",
+        "label": "Verdes",
+        "colors": [
+          "#6E8F6A",
+          "#5E7F58"
+        ],
+        "image": "/static/img/test/venas-verdes.jpg"
+      },
+      {
+        "value": "mixtas",
+        "label": "Una mezcla de azules y verdes",
+        "colors": [
+          "#5F6FA8",
+          "#6E8F6A"
+        ],
+        "image": "/static/img/test/venas-mixtas.jpg"
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": true,
+    "multi": false
+  },
+  {
+    "key": "sun",
+    "section": "Tu piel",
+    "heading": "¿Qué le pasa a tu piel cuando tomas sol sin protector?",
+    "hint": "Piensa en lo que suele pasarte, por ejemplo en la playa. Esta respuesta no decide si tus colores son cálidos o fríos.",
+    "options": [
+      {
+        "value": "quema",
+        "label": "Se enrojece y me quemo fácil"
+      },
+      {
+        "value": "broncea",
+        "label": "Me bronceo fácil y casi no me quemo"
+      },
+      {
+        "value": "ambas",
+        "label": "Primero me quemo un poco y luego me bronceo"
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "metal",
+    "section": "Tu piel",
+    "heading": "¿Qué joyas te quedan mejor: plateadas o doradas?",
+    "hint": "Ponte (o imagina) unos aretes o un collar cerca de la cara, con luz natural y sin filtros. Elige con cuál tu cara se ve más luminosa y pareja.",
+    "options": [
+      {
+        "value": "plata",
+        "label": "Plateadas",
+        "colors": [
+          "#E3E6EA",
+          "#B8BEC6"
+        ],
+        "image": "/static/img/test/joyas-plata.jpg"
+      },
+      {
+        "value": "oro",
+        "label": "Doradas",
+        "colors": [
+          "#F2D27A",
+          "#D4AF37"
+        ],
+        "image": "/static/img/test/joyas-oro.jpg"
+      },
+      {
+        "value": "ambos",
+        "label": "Las dos me quedan igual de bien",
+        "colors": [
+          "#C9CED6",
+          "#D4AF37"
+        ]
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "white",
+    "section": "Tu piel",
+    "heading": "¿Qué blanco te queda mejor cerca de la cara?",
+    "hint": "Compara una prenda blanca brillante con una color crema. Elige la que hace que tu piel se vea más pareja, con menos ojeras o manchas.",
+    "options": [
+      {
+        "value": "puro",
+        "label": "Blanco puro (como una hoja de papel)",
+        "colors": [
+          "#FFFFFF"
+        ]
+      },
+      {
+        "value": "marfil",
+        "label": "Blanco crema o hueso",
+        "colors": [
+          "#F3E9D2"
+        ]
+      },
+      {
+        "value": "ambos",
+        "label": "Los dos igual"
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "clothes",
+    "section": "Tu piel",
+    "heading": "¿Con qué colores de ropa se ve mejor tu cara?",
+    "hint": "Elige por cómo se ve tu piel con ese color cerca de la cara, no por tu color favorito.",
+    "options": [
+      {
+        "value": "frios",
+        "label": "Azul rey, fucsia, morado (colores fríos)",
+        "colors": [
+          "#1F4FBF",
+          "#E0218A",
+          "#6A3FA0"
+        ]
+      },
+      {
+        "value": "calidos",
+        "label": "Coral, naranja, camel, terracota (colores cálidos)",
+        "colors": [
+          "#F88379",
+          "#F28C28",
+          "#C19A6B",
+          "#C8643B"
+        ]
+      },
+      {
+        "value": "ambos",
+        "label": "Los dos grupos por igual"
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "lip_temp",
+    "section": "Tu piel",
+    "heading": "¿Qué labiales te quedan mejor?",
+    "hint": "Piensa en labiales que hayas usado o probado.",
+    "options": [
+      {
+        "value": "berry",
+        "label": "Vino, cereza o frambuesa (rojos con fondo azulado)",
+        "colors": [
+          "#7B1E3A",
+          "#9E1B32",
+          "#B5375A"
+        ]
+      },
+      {
+        "value": "rosa",
+        "label": "Rosa o nude rosado",
+        "colors": [
+          "#D98A9C",
+          "#C9848A"
+        ]
+      },
+      {
+        "value": "rojo",
+        "label": "Rojo clásico",
+        "colors": [
+          "#C1121F"
+        ]
+      },
+      {
+        "value": "durazno",
+        "label": "Durazno o nude cálido",
+        "colors": [
+          "#E59A7A",
+          "#D69477"
+        ]
+      },
+      {
+        "value": "coral",
+        "label": "Coral, terracota o ladrillo (rojos con fondo naranja)",
+        "colors": [
+          "#F06C4E",
+          "#C8643B",
+          "#A0442C"
+        ]
+      },
+      {
+        "value": "ambos",
+        "label": "Varios me quedan igual de bien"
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "blush_temp",
+    "section": "Tu piel",
+    "heading": "¿Qué color de rubor se ve más natural en ti?",
+    "hint": "El rubor es el color que se pone en las mejillas.",
+    "options": [
+      {
+        "value": "rosa",
+        "label": "Rosado o malva",
+        "colors": [
+          "#E8A0B4",
+          "#C79AAE"
+        ]
+      },
+      {
+        "value": "durazno",
+        "label": "Durazno o coral",
+        "colors": [
+          "#F4B183",
+          "#F28C6E"
+        ]
+      },
+      {
+        "value": "ambos",
+        "label": "Los dos por igual"
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "foundation_temp",
+    "section": "Tu piel",
+    "heading": "Si usas base de maquillaje, ¿cuál te ha funcionado mejor?",
+    "hint": "Responde solo si lo sabes por experiencia. Muchas marcas lo dicen en el nombre del tono: rosado, cálido, neutral u oliva.",
+    "options": [
+      {
+        "value": "rosado",
+        "label": "Las de tono rosado (frías)",
+        "colors": [
+          "#EBC1B0"
+        ]
+      },
+      {
+        "value": "dorado",
+        "label": "Las de tono dorado o amarillo (cálidas)",
+        "colors": [
+          "#E2B887"
+        ]
+      },
+      {
+        "value": "neutro",
+        "label": "Las neutras: ni rosadas ni doradas",
+        "colors": [
+          "#E3BFA2"
+        ]
+      },
+      {
+        "value": "oliva",
+        "label": "Las de tono oliva o verdoso",
+        "colors": [
+          "#CDB48D"
+        ]
+      },
+      {
+        "value": "no_se",
+        "label": "No uso base / no lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "hair",
+    "section": "Tu cabello y tus ojos",
+    "heading": "¿De qué color es tu cabello natural?",
+    "hint": "El color con el que te crece, sin tintes ni mechas.",
+    "options": [
+      {
+        "value": "rubio",
+        "label": "Rubio",
+        "colors": [
+          "#E3C77E"
+        ],
+        "image": "/static/img/test/cabello-rubio.jpg"
+      },
+      {
+        "value": "castano",
+        "label": "Castaño",
+        "colors": [
+          "#7A5235"
+        ],
+        "image": "/static/img/test/cabello-castano.jpg"
+      },
+      {
+        "value": "negro",
+        "label": "Negro",
+        "colors": [
+          "#1F1A17"
+        ],
+        "image": "/static/img/test/cabello-negro.jpg"
+      },
+      {
+        "value": "rojizo",
+        "label": "Pelirrojo o cobrizo",
+        "colors": [
+          "#A5482B"
+        ],
+        "image": "/static/img/test/cabello-rojizo.jpg"
+      },
+      {
+        "value": "otro",
+        "label": "Canoso u otro",
+        "colors": [
+          "#C9C5C0"
+        ],
+        "image": "/static/img/test/cabello-canoso.jpg"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "hair_depth",
+    "section": "Tu cabello y tus ojos",
+    "heading": "¿Qué tan claro u oscuro es tu cabello natural?",
+    "hint": "Sin tintes ni mechas.",
+    "options": [
+      {
+        "value": "muy_claro",
+        "label": "Muy claro (rubio claro o canoso)",
+        "colors": [
+          "#F0DCA0"
+        ]
+      },
+      {
+        "value": "claro",
+        "label": "Claro (rubio oscuro o castaño claro)",
+        "colors": [
+          "#B98A55"
+        ]
+      },
+      {
+        "value": "medio",
+        "label": "Medio (castaño)",
+        "colors": [
+          "#6E4A2E"
+        ]
+      },
+      {
+        "value": "oscuro",
+        "label": "Oscuro (castaño oscuro o negro)",
+        "colors": [
+          "#2A1E18"
+        ]
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "eyes",
+    "section": "Tu cabello y tus ojos",
+    "heading": "¿De qué color son tus ojos?",
+    "hint": "Si tienen varios colores, elige el que más se nota.",
+    "options": [
+      {
+        "value": "azul",
+        "label": "Azules",
+        "colors": [
+          "#5B8FC9"
+        ],
+        "image": "/static/img/test/ojos-azul.jpg"
+      },
+      {
+        "value": "verde",
+        "label": "Verdes",
+        "colors": [
+          "#5E8C5A"
+        ],
+        "image": "/static/img/test/ojos-verde.jpg"
+      },
+      {
+        "value": "miel",
+        "label": "Miel o avellana",
+        "colors": [
+          "#B98A3E"
+        ],
+        "image": "/static/img/test/ojos-miel.jpg"
+      },
+      {
+        "value": "cafe",
+        "label": "Cafés",
+        "colors": [
+          "#6B4226"
+        ],
+        "image": "/static/img/test/ojos-cafe.jpg"
+      },
+      {
+        "value": "negro",
+        "label": "Cafés muy oscuros, casi negros",
+        "colors": [
+          "#2A1A12"
+        ],
+        "image": "/static/img/test/ojos-negro.jpg"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "eye_depth",
+    "section": "Tu cabello y tus ojos",
+    "heading": "Con luz natural, ¿qué tan claros u oscuros se ven tus ojos?",
+    "hint": "No importa el color, sino si se ven claros o muy oscuros.",
+    "options": [
+      {
+        "value": "claro",
+        "label": "Claros",
+        "colors": [
+          "#9DBAD6",
+          "#A9B98A"
+        ]
+      },
+      {
+        "value": "medio",
+        "label": "Intermedios",
+        "colors": [
+          "#8A6A3E"
+        ]
+      },
+      {
+        "value": "oscuro",
+        "label": "Oscuros",
+        "colors": [
+          "#2E1E14"
+        ]
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "contrast",
+    "section": "Tu cabello y tus ojos",
+    "heading": "¿Qué tanta diferencia hay entre tu piel, tu cabello y tus ojos?",
+    "hint": "Ejemplo de mucha diferencia: piel clara con cabello negro. Ejemplo de poca diferencia: piel, cabello y ojos de tonos parecidos, como piel trigueña con cabello castaño.",
+    "options": [
+      {
+        "value": "bajo",
+        "label": "Poca: son tonos parecidos",
+        "colors": [
+          "#E2C7AE",
+          "#C9A27E",
+          "#A98663"
+        ]
+      },
+      {
+        "value": "medio",
+        "label": "Algo de diferencia",
+        "colors": [
+          "#EFD2BC",
+          "#7A5235",
+          "#8A6A3E"
+        ]
+      },
+      {
+        "value": "alto",
+        "label": "Mucha: se notan muy distintos",
+        "colors": [
+          "#F3D9C8",
+          "#1F1A17",
+          "#2E1E14"
+        ]
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "brow_contrast",
+    "section": "Tu cabello y tus ojos",
+    "heading": "¿Qué tanto resaltan tus cejas sobre tu piel?",
+    "hint": "Sin maquillar las cejas. La forma no importa, solo qué tan oscuras se ven frente a tu piel.",
+    "options": [
+      {
+        "value": "suaves",
+        "label": "Poco: casi se confunden con la piel",
+        "colors": [
+          "#E9CDB6",
+          "#C9A27E"
+        ]
+      },
+      {
+        "value": "medias",
+        "label": "Algo",
+        "colors": [
+          "#E9CDB6",
+          "#7A5235"
+        ]
+      },
+      {
+        "value": "marcadas",
+        "label": "Mucho: son mucho más oscuras que mi piel",
+        "colors": [
+          "#E9CDB6",
+          "#1F1A17"
+        ]
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "depth_best",
+    "section": "Colores que te favorecen",
+    "heading": "¿Te quedan mejor los colores claros u oscuros?",
+    "hint": "Imagina prendas cerca de tu cara. No es cuál te gusta más, sino con cuál se ve mejor tu piel.",
+    "options": [
+      {
+        "value": "profundos",
+        "label": "Oscuros: vino, azul marino, verde botella",
+        "colors": [
+          "#6D1A36",
+          "#1B2A4A",
+          "#1F4D2B"
+        ]
+      },
+      {
+        "value": "claros",
+        "label": "Claros: rosa pálido, celeste, crema",
+        "colors": [
+          "#F6C9D3",
+          "#BFE3F2",
+          "#F4ECD6"
+        ]
+      },
+      {
+        "value": "intermedios",
+        "label": "Ni muy claros ni muy oscuros",
+        "colors": [
+          "#C46D7E",
+          "#4F7CAC",
+          "#6A9A6E"
+        ]
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "lip_depth",
+    "section": "Colores que te favorecen",
+    "heading": "¿Te quedan mejor los labiales claros u oscuros?",
+    "hint": "Piensa en cómo se ve tu cara completa, no solo los labios.",
+    "options": [
+      {
+        "value": "profundo",
+        "label": "Oscuros: vino, ciruela, rojo oscuro",
+        "colors": [
+          "#5E1224",
+          "#5B2A4A",
+          "#8B0000"
+        ]
+      },
+      {
+        "value": "claro",
+        "label": "Claros: rosa claro o nude",
+        "colors": [
+          "#F2B5C0",
+          "#D8A48F"
+        ]
+      },
+      {
+        "value": "medio",
+        "label": "Intermedios: rojo, rosa o durazno de intensidad media",
+        "colors": [
+          "#C94F64",
+          "#C1121F",
+          "#E59A7A"
+        ]
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "chromatic_best",
+    "section": "Colores que te favorecen",
+    "heading": "¿Cómo te ves con colores muy vivos y llamativos?",
+    "hint": "Por ejemplo: rojo intenso, fucsia o azul eléctrico cerca de la cara.",
+    "options": [
+      {
+        "value": "favorecen",
+        "label": "Me iluminan la cara",
+        "colors": [
+          "#E3002B",
+          "#FF1493",
+          "#0047FF"
+        ]
+      },
+      {
+        "value": "dominan",
+        "label": "Llaman más la atención que mi cara",
+        "colors": [
+          "#E3002B",
+          "#FF1493",
+          "#0047FF"
+        ]
+      },
+      {
+        "value": "intermedio",
+        "label": "No noto mucha diferencia"
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "muted_effect",
+    "section": "Colores que te favorecen",
+    "heading": "¿Cómo te ves con colores suaves y apagados?",
+    "hint": "Son colores con un toque de gris, por ejemplo: rosa viejo, malva o verde salvia.",
+    "options": [
+      {
+        "value": "favorecen",
+        "label": "Me quedan bien, se ven armoniosos",
+        "colors": [
+          "#C08081",
+          "#B784A7",
+          "#9CAF88"
+        ]
+      },
+      {
+        "value": "apagan",
+        "label": "Me hacen ver cansada o sin vida",
+        "colors": [
+          "#C08081",
+          "#B784A7",
+          "#9CAF88"
+        ]
+      },
+      {
+        "value": "intermedio",
+        "label": "Igual que con los colores vivos"
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "vivid_effect",
+    "section": "Colores que te favorecen",
+    "heading": "Entre estos dos rosados, ¿cuál te quedaría mejor?",
+    "hint": "Los dos son igual de claros; lo que cambia es qué tan vivo es el color.",
+    "options": [
+      {
+        "value": "fuerte",
+        "label": "Fucsia intenso y vivo",
+        "colors": [
+          "#FF1493"
+        ]
+      },
+      {
+        "value": "polvoso",
+        "label": "Rosa viejo, suave y apagado",
+        "colors": [
+          "#C08081"
+        ]
+      },
+      {
+        "value": "intermedio",
+        "label": "Un rosado intermedio",
+        "colors": [
+          "#E36F9A"
+        ]
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "makeup_intensity",
+    "section": "Colores que te favorecen",
+    "heading": "¿Qué tipo de maquillaje te favorece más?",
+    "hint": "No es cuánto te gusta maquillarte, sino con cuál se ve más equilibrada tu cara.",
+    "options": [
+      {
+        "value": "definido",
+        "label": "Intenso: labios u ojos marcados y de color fuerte",
+        "colors": [
+          "#9E1B32",
+          "#1F1A17"
+        ]
+      },
+      {
+        "value": "difuminado",
+        "label": "Suave: tonos ligeros y difuminados",
+        "colors": [
+          "#E8A0B4",
+          "#D8B8A8"
+        ]
+      },
+      {
+        "value": "equilibrado",
+        "label": "Intermedio"
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "clear_vs_dusty",
+    "section": "Colores que te favorecen",
+    "heading": "¿Qué azul te queda mejor cerca de la cara?",
+    "hint": "Compara cómo se ve tu piel con cada color.",
+    "options": [
+      {
+        "value": "electrico",
+        "label": "Azul eléctrico: brillante y limpio",
+        "colors": [
+          "#0047FF"
+        ]
+      },
+      {
+        "value": "grisaceo",
+        "label": "Azul grisáceo: suave y apagado",
+        "colors": [
+          "#6E7F99"
+        ]
+      },
+      {
+        "value": "medio",
+        "label": "Un azul intermedio",
+        "colors": [
+          "#3F6FB5"
+        ]
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "season_known",
+    "section": "Colores que te favorecen",
+    "heading": "¿Alguien ya te hizo un análisis de color y te dijo tu estación?",
+    "hint": "Las estaciones (primavera, verano, otoño e invierno) agrupan los colores que mejor le quedan a cada persona. Si nunca te hicieron un análisis de color, elige la primera opción.",
+    "options": [
+      {
+        "value": "no_se",
+        "label": "No, quiero que Chroma la calcule"
+      },
+      {
+        "value": "Invierno profundo",
+        "label": "Invierno profundo"
+      },
+      {
+        "value": "Invierno frío",
+        "label": "Invierno frío"
+      },
+      {
+        "value": "Invierno brillante",
+        "label": "Invierno brillante"
+      },
+      {
+        "value": "Verano claro",
+        "label": "Verano claro"
+      },
+      {
+        "value": "Verano frío",
+        "label": "Verano frío"
+      },
+      {
+        "value": "Verano suave",
+        "label": "Verano suave"
+      },
+      {
+        "value": "Otoño profundo",
+        "label": "Otoño profundo"
+      },
+      {
+        "value": "Otoño cálido",
+        "label": "Otoño cálido"
+      },
+      {
+        "value": "Otoño suave",
+        "label": "Otoño suave"
+      },
+      {
+        "value": "Primavera clara",
+        "label": "Primavera clara"
+      },
+      {
+        "value": "Primavera cálida",
+        "label": "Primavera cálida"
+      },
+      {
+        "value": "Primavera brillante",
+        "label": "Primavera brillante"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "skin_type",
+    "section": "Tus preferencias",
+    "heading": "¿Cómo está tu piel al final del día?",
+    "hint": "Fíjate en tu cara al terminar un día normal, sin maquillaje.",
+    "options": [
+      {
+        "value": "seca",
+        "label": "Seca: se siente tirante o se pela"
+      },
+      {
+        "value": "mixta",
+        "label": "Mixta: brilla en frente, nariz y mentón, pero el resto no"
+      },
+      {
+        "value": "grasa",
+        "label": "Grasa: brilla en toda la cara"
+      },
+      {
+        "value": "normal",
+        "label": "Normal: ni brilla ni se siente tirante"
+      },
+      {
+        "value": "no_se",
+        "label": "No lo sé"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "finish",
+    "section": "Tus preferencias",
+    "heading": "¿Cómo te gusta que se vea el maquillaje en tu piel?",
+    "hint": "Esto se llama acabado. Ninguno es mejor que otro: es cuestión de gusto.",
+    "options": [
+      {
+        "value": "mate",
+        "label": "Mate: sin brillo",
+        "colors": [
+          "#C46D7E"
+        ],
+        "finish": "mate"
+      },
+      {
+        "value": "satinado",
+        "label": "Satinado: un brillo suave y natural",
+        "colors": [
+          "#C46D7E"
+        ],
+        "finish": "satinado"
+      },
+      {
+        "value": "luminoso",
+        "label": "Luminoso: con brillo, efecto «glow»",
+        "colors": [
+          "#C46D7E"
+        ],
+        "finish": "luminoso"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  },
+  {
+    "key": "budget",
+    "section": "Tus preferencias",
+    "heading": "¿Cuánto gastas como máximo en un producto de maquillaje?",
+    "hint": "Sirve para mostrarte primero los productos que están dentro de tu presupuesto.",
+    "options": [
+      {
+        "value": "50000",
+        "label": "Hasta $50.000 COP"
+      },
+      {
+        "value": "80000",
+        "label": "Hasta $80.000 COP"
+      },
+      {
+        "value": "120000",
+        "label": "Hasta $120.000 COP"
+      },
+      {
+        "value": "180000",
+        "label": "Hasta $180.000 COP"
+      }
+    ],
+    "photo": false,
+    "multi": false
+  }
+]
