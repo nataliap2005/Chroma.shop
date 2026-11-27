@@ -1,3 +1,4 @@
+import { OrderStatusControls } from '../components/OrderStatusControls';
 import { Geolocation } from '@capacitor/geolocation';
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -288,6 +289,7 @@ export function Orders() {
     </Screen>;
 }
 export function OrderDetail() {
+    const { admin } = useShop();
     const { id } = useParams(), { rows, error } = useOrders(), o = rows.find(x => x.id === id);
     return <Screen title="Seguimiento del pedido" back>
         {o ? <>
@@ -312,6 +314,7 @@ export function OrderDetail() {
         {money(o.total)}
         </h3>
 
+        {admin && <OrderStatusControls id={o.id} status={o.status}/>}
         </section>
         </> : <p>
         {error || 'Consultando pedido…'}
