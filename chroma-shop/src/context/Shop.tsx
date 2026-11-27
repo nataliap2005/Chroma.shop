@@ -1,3 +1,4 @@
+import { usePush } from '../hooks/usePush';
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import type { User } from '@supabase/supabase-js';
 import { Haptics, ImpactStyle } from '@capacitor/haptics';
@@ -32,6 +33,7 @@ function read<T>(key: string, fallback: T): T {
 }
 function useShopState() {
     const [user, setUser] = useState<User | null>(null), [admin, setAdmin] = useState(false), [ready, setReady] = useState(!supabase), [products, setProducts] = useState<Item[]>(supabase ? [] : seed as Item[]), [error, setError] = useState(''), [notice, setNotice] = useState(''), [cart, setCart] = useState<Record<string, number>>(() => read('shop-cart', {})), [beauty, setBeauty] = useState<Beauty | null>(() => read('shop-guest-beauty', null)), [favorites, setFavorites] = useState<string[]>([]), [avatar, setAvatar] = useState('');
+    usePush(user?.id);
     async function refresh() {
         if (!supabase)
             return;

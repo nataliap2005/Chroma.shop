@@ -1,3 +1,4 @@
+import { disconnectPush } from '../services/push';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IonButton } from '@ionic/react';
@@ -76,14 +77,14 @@ export function Account() {
             {[['Mis pedidos', '/orders'], ['Mis favoritos', '/favorites'], ['Mis colores', '/colors'], ['Tiendas cercanas', '/stores'], ...(s.admin ? [['Panel de administración', '/admin']] : [])].map(([label, path]) => <button key={path} onClick={() => nav(path)}>
             {label} →
             </button>)}
-        </div><IonButton fill="outline" expand="block" onClick={() => void requireSupabase().auth.signOut().then(r => {
+        </div><IonButton fill="outline" expand="block" onClick={() => void disconnectPush().then(() => requireSupabase().auth.signOut()).then(r => {
                 if (r.error)
                     setMsg(r.error.message);
                 else {
                     s.clear();
                     setMsg('');
                 }
-            })}>Cerrar sesión
+            }).catch(() => setMsg('No se pudo desvincular el dispositivo. Intenta nuevamente.'))}>Cerrar sesión
         </IonButton></> : <><Intro tag="BIENVENIDA" title="Mi cuenta Chroma"/><div className="switch">
         <button className={!reg ? 'selected' : ''} onClick={() => setReg(false)}>Entrar
         </button>
