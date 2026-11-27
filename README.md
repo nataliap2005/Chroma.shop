@@ -314,35 +314,14 @@ El frontend web y FastAPI se alojan en Render. Android se genera mediante Capaci
 
 El repositorio Git organiza los cambios mediante ramas y su integración en `main`.
 
-## 17. Cumplimiento de la evaluación final
 
-| Requisito | Implementación | Evidencia o verificación |
-|---|---|---|
-| Prototipo y fidelidad visual | Lovable e Ionic | Figuras 1–5; comparar con aplicación |
-| React y navegación | Ionic React, React Router | Video y código |
-| Componentes, Context y hooks | Estado compartido y lógica reutilizable | Código fuente |
-| Sensores y capacidades nativas | GPS, cámara y Haptics | Video; Haptics se verifica físicamente |
-| Memoria | LocalStorage | Código y prueba de persistencia |
-| Base de datos | Supabase PostgreSQL | Figura 7 y compras |
-| Firebase | FCM Android | Notificaciones recibidas |
-| Comunicación en tiempo real | Supabase Realtime | Implementado; falta evidencia visual directa |
-| Chat, mapas u otra funcionalidad en tiempo real | Seguimiento de pedidos y sección de tiendas | Seguimiento; mapas no mostrados en el video descrito |
-| Backend | FastAPI en Render | Diagnóstico y recomendaciones |
-| Login y registro reales | Supabase Auth | Login mostrado y Figura 8; registro debe comprobarse aparte |
-| Transacciones | Checkout RPC e inventario | Compra y cambio de stock |
-| Documento final | Este Markdown y sus imágenes | Anexar al repositorio |
-| Ramas integradas y aportes | Git y GitHub | Verificar historial remoto |
-| README con integrantes, prototipo y APIs | Información de entrega | Verificar integrantes y APIs consumidas |
-
-La tabla distingue implementación, evidencia aportada y comprobaciones pendientes. No representa una certificación independiente de la ejecución de todas las funcionalidades.
-
-## 18. Conclusiones
+## 17. Conclusiones
 
 Chroma Shop integra los conocimientos del curso en una solución móvil que combina comercio electrónico, personalización, persistencia de datos y capacidades nativas. La separación entre frontend, backend y servicios de nube facilita el mantenimiento y la evolución del sistema.
 
 La integración de transacciones, autenticación, comunicación en tiempo real y notificaciones permite desarrollar un flujo completo desde el diagnóstico hasta el seguimiento de pedidos.
 
-## 19. Enlaces del proyecto
+## 18. Enlaces del proyecto
 
 - **Video demostrativo (3:32):** [Ver en YouTube](PEGAR_LINK_YOUTUBE)
 - **Backend (Render):** <https://chroma-shop.onrender.com>
