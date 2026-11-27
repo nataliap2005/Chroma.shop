@@ -7,7 +7,7 @@ from colorimetry import analyze
 from recommender import shape_product
 from hybrid import OCCASIONS, translate_shades, recommend_look
 app=FastAPI(title='Chroma Shop Engine')
-app.add_middleware(CORSMiddleware,allow_origins=os.getenv('SHOP_CORS','http://localhost:8101,http://localhost:5173,https://localhost,capacitor://localhost').split(','),allow_methods=['GET','POST'],allow_headers=['Content-Type'])
+app.add_middleware(CORSMiddleware,allow_origins=os.getenv('SHOP_CORS','http://localhost:8101,http://localhost:5173,https://localhost,capacitor://localhost').split(','),allow_methods=['GET','POST'],allow_headers=['Content-Type','Authorization'])
 class Input(BaseModel):
     answers: dict
 class CatalogInput(Input):
@@ -47,3 +47,6 @@ def translator(body:TranslateInput):
 def advisor(body:LookInput):
     if body.occasion not in OCCASIONS: raise HTTPException(422,'Ocasión inválida')
     p=analysis(body); return recommend_look(scored([r for r in body.products if r.get('stock',0)>0],p),[],p,body.occasion,body.budget)
+
+from push import router as push_router
+app.include_router(push_router)
