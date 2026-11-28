@@ -8,6 +8,9 @@ Natalia Paredes Cambindo
 > **Video demostrativo:** [Ver en YouTube](https://youtu.be/sGBc7XLv4K4)
 
 > **Aplicación web:** <https://chroma-shop-front.onrender.com>
+
+> **Lovable:** [Prototipo](https://lovable.dev/projects/132cc8a3-d1bf-4fba-9f4c-984185dd36bf?magic_link=mc_0c4e7b76-1cfc-42ae-9243-5885f16778cb)
+
 ## 1. Introducción
 
 Chroma Shop es una aplicación móvil de comercio electrónico de maquillaje que integra un diagnóstico de colorimetría para recomendar tonalidades y productos personalizados. La solución combina una aplicación Android, una interfaz web, servicios backend y una base de datos en la nube.
